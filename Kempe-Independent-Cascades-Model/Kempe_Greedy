@@ -1,0 +1,32 @@
+def KempeGreedy(graph, num_seed_nodes, prob=0.2, 100):
+   #Solution gives 2 parameters: the selected seed set for which we found the maximum influence & their influences
+   #Here we used this method for Networkx Directed Graph
+    max_spreads = []
+    ultimate_seed_set = []
+ 
+    for _ in range(num_seed_nodes):
+        best_node = -1
+        best_spread = -np.inf
+
+       
+        nods = graph.nodes - solution;
+
+        for node in nods:
+            each_infl = IC(g, solution + [node], prob, 100)
+            if each_infl > best_infl:
+                best_infl = each_infl
+                best_node = node
+
+        ultimate_seed_set.append(best_node)
+        max_spreads.append(best_spread)
+    return solution, spreads
+
+#num_seed_nodes=how many nodes we want for our best seed set.
+num_seed_nodes = 2
+prob = 0.2
+
+
+g=nx.read_edgelist('data-file.txt',create_using=nx.DiGraph());
+greedy_solution, greedy_spreads = KempeGreedy(g, num_seed_nodes, prob)
+print('solution: ', greedy_solution)
+print('spreads: ', greedy_spreads)
