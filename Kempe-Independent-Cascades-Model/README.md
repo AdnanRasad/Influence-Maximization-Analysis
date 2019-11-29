@@ -1,6 +1,8 @@
 # Kempe-IM-IC
 
-Input
+# Input : 
+
+Directed Graph, G(V,E) :
 
 ![Image description](g.png)
 
@@ -8,5 +10,7 @@ Input
 
 
 # Output:
+
+Max-Seed-Set-Size=2
 
 ![Image description](Capture.JPG)
