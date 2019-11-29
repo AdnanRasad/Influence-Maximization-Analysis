@@ -1,5 +1,5 @@
 # sampleGraph.txt
-![Image description](graph (1).PNG)
+![Image description](graph (1).png)
 
 
 
