@@ -1,8 +1,12 @@
 # sampleGraph.txt
+
+
+
 ![Image description](g.png)
 
 
 
 
-Output:
+# Output:
+
 ![Image description](Capture.JPG)
