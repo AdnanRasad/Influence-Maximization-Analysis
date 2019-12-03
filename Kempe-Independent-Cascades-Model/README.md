@@ -4,7 +4,7 @@
 
 Directed Graph, G(V,E) :
 
-![Image description](g.png)
+![Image description](Simplegraph.png)
 
 
 
