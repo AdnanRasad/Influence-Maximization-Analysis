@@ -13,4 +13,4 @@ Directed Graph, G(V,E) :
 
 Max-Seed-Set-Size=2
 
-![Image description](Capture.JPG)
+![Image description](solution.JPG)
