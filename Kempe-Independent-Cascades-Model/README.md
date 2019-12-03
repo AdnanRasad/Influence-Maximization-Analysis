@@ -13,7 +13,7 @@ Directed Graph, G(V,E) :
 
 Max-Seed-Set-Size=2
 
-![Image description](solution.JPG)
+![Image description](sol.JPG)
 
 when k or num_seed_nodes =1, solution is 0 as 0 is the most influential.
 
