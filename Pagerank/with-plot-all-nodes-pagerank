@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 """
 
 @author: Adnan
@@ -8,7 +7,7 @@ import networkx as nx;
 import matplotlib.pyplot as plt;
 from itertools import islice
 
-g=nx.read_edgelist('sampleGraph2.txt',create_using=nx.DiGraph());
+g=nx.read_edgelist('yournewfile.txt',create_using=nx.DiGraph());
 print(nx.info(g));
 
 pgr_g=nx.pagerank(g);
@@ -25,7 +24,12 @@ best_k_from_sorted_pgr_g = sorted_pgr_g[0 : k];
 print("seed set with its pagerank")
 print(best_k_from_sorted_pgr_g);
 
-x, y = zip(*best_k_from_sorted_pgr_g)
+answer=[];
 
-plt.plot(x, y)
+for x in best_k_from_sorted_pgr_g:
+  answer.append(x[1]);
+
+print(answer)
+
+plt.plot(answer)
 plt.show()
