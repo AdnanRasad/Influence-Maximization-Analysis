@@ -1,0 +1,31 @@
+# -*- coding: utf-8 -*-
+"""
+
+@author: Adnan
+"""
+
+import networkx as nx;
+import matplotlib.pyplot as plt;
+from itertools import islice
+
+g=nx.read_edgelist('sampleGraph2.txt',create_using=nx.DiGraph());
+print(nx.info(g));
+
+pgr_g=nx.pagerank(g);
+
+
+"""sorted_pgr_g=sorted(pgr_g.items(), key=lambda kv:kv[1],reverse=True)"""
+sorted_pgr_g=sorted(pgr_g.items(), key=lambda kv:kv[1])
+
+
+
+
+k=9;
+best_k_from_sorted_pgr_g = sorted_pgr_g[0 : k]; 
+print("seed set with its pagerank")
+print(best_k_from_sorted_pgr_g);
+
+x, y = zip(*best_k_from_sorted_pgr_g)
+
+plt.plot(x, y)
+plt.show()
